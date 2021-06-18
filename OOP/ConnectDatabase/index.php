@@ -1,10 +1,11 @@
 <?php
-// include 'includes/class-autoload.inc.php';
-    include_once 'classes/dbh.class.php';
-    include_once 'classes/test.class.php';
-    include_once 'classes/users.class.php';
-    include_once 'classes/userscontr.class.php';
-    include_once 'classes/usersview.class.php';
+   /** 
+    * include_once 'classes/dbh.class.php';
+    * include_once 'classes/test.class.php';
+    * include_once 'classes/users.class.php';
+    * include_once 'classes/userscontr.class.php';
+    * include_once 'classes/usersview.class.php';
+    */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,11 +17,17 @@
 </head>
 <body>
     <?php
-        $usersObj = new UsersView();
-        $usersObj->showUsers("Dishant");
 
-        $usersObj2 = new UsersContr();
-        $usersObj2->createUser("ABCD", "EFGH");
+        echo "index";
+        include 'includes/class-autoload.inc.php';
+
+        //$usersObj = new UsersView();
+        //$usersObj->showUsers("Dishant");
+//
+        //$usersObj2 = new UsersContr();
+        //$usersObj2->createUser("ABCD", "EFGH");
+        $usersObj = new Test();
+        $usersObj->printecho();
     ?>
 </body>
-</html>
+</html> 
